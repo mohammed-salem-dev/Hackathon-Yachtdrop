@@ -1,27 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --navy: #0a1628;
+    --teal: #0e7c7b;
+    --surface: #f5f7fa;
+    --ink: #1c1c1e;
+    --border: #e4e8ee;
+    --radius: 1rem;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-brand-surface text-brand-ink font-sans antialiased;
+    /*max-width: 480px; */
+    /*margin: 0 auto;*/
+    min-height: 100dvh;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button,
+  a {
+    @apply transition-all duration-200 ease-in-out;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply min-h-[52px] w-full bg-brand-teal text-white rounded-2xl
+      font-semibold text-base tracking-wide
+      active:brightness-90 transition-all duration-200 ease-in-out;
+  }
+
+  .btn-secondary {
+    @apply min-h-[52px] w-full bg-brand-navy text-white rounded-2xl
+      font-semibold text-base tracking-wide
+      active:brightness-90 transition-all duration-200 ease-in-out;
+  }
+
+  .btn-ghost {
+    @apply min-h-[48px] text-sm font-medium text-brand-muted
+      active:text-brand-ink transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-brand-border;
+    box-shadow:
+      0 1px 4px 0 rgba(10, 22, 40, 0.06),
+      0 1px 2px 0 rgba(10, 22, 40, 0.04);
+  }
+
+  .section-label {
+    @apply text-[11px] font-bold uppercase tracking-widest text-brand-muted;
+  }
+
+  .field {
+    @apply w-full min-h-[48px] px-4 rounded-xl border border-brand-border
+      bg-white text-brand-ink text-sm outline-none
+      focus:border-brand-teal transition-colors duration-200 ease-in-out;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .stable-scroll {
+    scrollbar-gutter: stable;
+  }
+}
+
+@keyframes berthBounce {
+  0% {
+    transform: translateY(-32px);
+    opacity: 0;
+  }
+  55% {
+    transform: translateY(4px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(2px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.berth-marker-bounce {
+  animation: berthBounce 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.mapboxgl-popup-content {
+  background: #0a1628 !important;
+  color: #f5f7fa !important;
+  border-radius: 16px !important;
+  padding: 0 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #0a1628 !important;
+  border-bottom-color: #0a1628 !important;
+}
+
+.mapboxgl-popup-close-button {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-attrib {
+  font-size: 9px !important;
+  opacity: 0.5;
+}
+
+/* Hide Next.js dev tools indicator */
+nextjs-portal {
+  display: none !important;
 }
