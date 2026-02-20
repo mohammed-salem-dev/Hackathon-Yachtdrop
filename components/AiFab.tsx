@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Wand } from "lucide-react"; // ✅ single clean import
+import { Wand } from "lucide-react"; //
 
 type Props = { onClick: () => void };
 

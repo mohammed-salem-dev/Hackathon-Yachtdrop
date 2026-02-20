@@ -60,7 +60,7 @@ export default function AiMatchSheet({ isOpen, onClose }: Props) {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
+          {}
           <motion.div
             key="ai-backdrop"
             initial={{ opacity: 0 }}
@@ -71,7 +71,6 @@ export default function AiMatchSheet({ isOpen, onClose }: Props) {
             className="fixed inset-0 bg-black/50 z-50"
           />
 
-          {/* Sheet — pops from bottom-right, expands to the LEFT */}
           <motion.div
             key="ai-sheet"
             initial={{ opacity: 0, scale: 0.85, x: 40, y: 20 }}
@@ -88,7 +87,6 @@ export default function AiMatchSheet({ isOpen, onClose }: Props) {
               flex flex-col max-h-[65dvh]
               origin-bottom-right"
           >
-            {/* Header */}
             <div className="px-4 pt-4 pb-3 border-b border-brand-border shrink-0">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">

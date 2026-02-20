@@ -34,7 +34,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     price: 5813.06,
 
     imageUrl:
-      "https://nautichandler.com/6779-small_default/lewmar-delta-anchor-stainless-steel-40kg.webp",
+      "https://nautichandler.com/6779-large_default/lewmar-delta-anchor-stainless-steel-40kg.webp",
     description:
       "Its unique shank profile and ballasted tip make the Delta® anchor self-launching. The low centre of gravity and self-righting geometry ensure that the Delta® anchor will set immediately. Consistent and reliable in performance, the Delta® anchor has Lloyd's Register General Approval of an Anchor Design as a High Holding Power anchor and is specified as the primary anchor used by numerous National Lifeboat organisations. Also available in premium grade Duplex/High Tensile stainless steel.",
     category: "Anchoring & Docking",

@@ -4,7 +4,7 @@ import {
   saveBerth,
   clearBerth,
   type SavedBerth,
-} from "@/lib/orderStorage";
+} from "@/lib/berthStorage";
 
 export function useBerth() {
   const [savedBerth, setSavedBerth] = useState<SavedBerth | null>(null);

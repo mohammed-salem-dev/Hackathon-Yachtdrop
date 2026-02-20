@@ -27,7 +27,7 @@ export default function YachtDropLogo({
       href="/"
       className={cn("flex items-center gap-2 select-none", className)}
     >
-      {/* Logo icon image */}
+      {}
       <Image
         src="/logo.png"
         alt="Yachtdrop"
@@ -36,8 +36,8 @@ export default function YachtDropLogo({
         className="object-contain"
         priority
       />
-      {/* Text */}
-      <span className="wixui-rich-text__text">Yachtdrop</span>
+      {}
+      <span className="wixui-rich-text__text">yachtdrop</span>
     </Link>
   );
 }
