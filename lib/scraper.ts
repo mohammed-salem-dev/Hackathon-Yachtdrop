@@ -25,7 +25,7 @@ const CACHE_FILE =
 const CACHE_TTL_MS = 0;
 
 const MOCK_PRODUCTS: ProductItem[] = [
-  // ── existing 16 products stay here ──
+
 
   // ── ANCHORING ──
   {
@@ -33,8 +33,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Lewmar delta anchor stainless steel 40kg",
     price: 5813.06,
 
-    imageUrl:
-      "https://nautichandler.com/6779-large_default/lewmar-delta-anchor-stainless-steel-40kg.webp",
+    imageUrl: "/products/lewmar.png",
     description:
       "Its unique shank profile and ballasted tip make the Delta® anchor self-launching. The low centre of gravity and self-righting geometry ensure that the Delta® anchor will set immediately. Consistent and reliable in performance, the Delta® anchor has Lloyd's Register General Approval of an Anchor Design as a High Holding Power anchor and is specified as the primary anchor used by numerous National Lifeboat organisations. Also available in premium grade Duplex/High Tensile stainless steel.",
     category: "Anchoring & Docking",
@@ -45,8 +44,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-anchor-Rope",
     name: "Rope covers maxichafe ø24-34mm (30cm) black fendequip",
     price: 25.85,
-    imageUrl:
-      "https://nautichandler.com/4789-large_default/rope-covers-maxichafe-o2434mm-30cm-black-fendequip.webp",
+    imageUrl: "/products/rope-covers.png",
     description:
       "The unique maxiChafe chafeMat system protects the yachts topside and gel coat from scuff marks whilst extending the life of the rope.",
     category: "Anchoring & Docking",
@@ -58,8 +56,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Maxistow hd inflatable fender dark grey 75x30cm fendequip",
     price: 197.77,
     originalPrice: 219.74,
-    imageUrl:
-      "https://nautichandler.com/11897-large_default/maxistow-hd-inflatable-fender-dark-grey-75x30cm-fendequip.webp",
+    imageUrl: "/products/maxistow-hd.png",
     description:
       "Light and easy to handle when inflated and easily stowed into a small locker when deflated. Made from high-grade fabrics with an abrasion and UV resistant surface.",
     category: "Anchoring & Docking",
@@ -73,8 +70,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Retro reflective tape solas 50mmx1m",
     price: 38.82,
     originalPrice: 48.52,
-    imageUrl:
-      "https://nautichandler.com/3021-large_default/retro-reflective-tape-solas-50mmx1m.webp",
+    imageUrl: "/products/retro-reflective-.png",
     description:
       "Retro-reflecvtive tape SOLAS. Increases safety for inflatables, life vests, life bouys, etc.",
     category: "Safety",
@@ -86,8 +82,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "PLASTIMO Lifejacket pilot 165 with harness",
     price: 84.37,
     originalPrice: 105.46,
-    imageUrl:
-      "https://nautichandler.com/18309-large_default/plastimo-lifejacket-pilot-165-with-harness.webp",
+    imageUrl: "/products/plastimo-lifejacket.png",
     description:
       "Buoyancy : Rated 150 N, actual buoyancy 165 N, XXL size available : with 60 - 175 cm belt",
     category: "Safety",
@@ -99,8 +94,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Liferaft-ISO9650",
     name: "Liferaft 4 Person Valise ISO9650",
     price: 2383.51,
-    imageUrl:
-      "https://nautichandler.com/17263-large_default/liferaft-4-person-valise-iso9650.webp",
+    imageUrl: "/products/liferaft-4-person.png",
     description:
       "Life rafts created especially for the Spanish market, according to the present regulations. Available in canister or valise.",
     category: "Safety",
@@ -114,8 +108,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Wurth Insulating Tape Pvc Grey 19xmm25mm",
     price: 3.81,
     originalPrice: 4.48,
-    imageUrl:
-      "https://nautichandler.com/5393-large_default/wurth-insulating-tape-pvc-grey-19xmm25mm.webp",
+    imageUrl: "/products/wurth-insulating.png",
     description:
       "General use in all types of electrical and industrial applications, insulation and clamping, marking of installations, etc ...",
     category: "Electrics - Lighting",
@@ -127,8 +120,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Hella Cable Connector Kit 7 PIN",
     price: 81.5,
     originalPrice: 85.79,
-    imageUrl:
-      "https://nautichandler.com/18489-large_default/hella-cable-connector-kit-7-pin.webp",
+    imageUrl: "/products/hella-cable.png",
     description: "Article number: 8JA 006 807-801",
     category: "Electrics - Lighting",
     sourceUrl:
@@ -138,8 +130,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Orion-converter-victron",
     name: "Orion tr converter 12/12v-30a 360w victron",
     price: 260.15,
-    imageUrl:
-      "https://nautichandler.com/12724-large_default/orion-tr-converter-1212v30a-360w-victron.webp",
+    imageUrl: "/products/orion-tr-converter.png",
     description:
       "Images shown may not accurately represent Orion-Tr 12 / 12-30A (360W) characteristics.",
     category: "Electrics - Lighting",
@@ -152,8 +143,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-MaxiStow-FENDEQUIP",
     name: "MaxiStow inflatable fender HDPVC Repair Kit FENDEQUIP",
     price: 171.71,
-    imageUrl:
-      "https://nautichandler.com/18595-large_default/maxistow-inflatable-fender-hdpvc-repair-kit-fendequip.webp",
+    imageUrl: "/products/maxistow-inflatable.png",
     description: "Glue not included",
     category: "Ropes",
     sourceUrl:
@@ -164,8 +154,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Bag Halyard PVC White 30x20x10cm",
     price: 46.71,
     originalPrice: 58.39,
-    imageUrl:
-      "https://nautichandler.com/14774-large_default/bag-halyard-pvc-white-30x20x10cm.webp",
+    imageUrl: "/products/bag-halyard.png",
     description: "PVC or Dralon, mesh canvas, batten and grommets.",
     category: "Ropes",
     sourceUrl:
@@ -176,8 +165,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "LIROS Dynema Regata Regata 2000 Blue 8mm",
     price: 6.77,
     originalPrice: 7.52,
-    imageUrl:
-      "https://nautichandler.com/4350-large_default/liros-dynema-regata-line-2000-blue-8mm.webp",
+    imageUrl: "/products/liros-dynema.png",
     description:
       "Mod. LIROS REGATTA 2000 - Material: Alma Dynema SK75 and polyester sheath of high torsion Construction: 2-3mm. Twisted 16 threads. From 4 mm.",
     category: "Ropes",
@@ -191,8 +179,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "3m oil absorbents 480x430x3mm x unity 1L",
     price: 1.51,
     originalPrice: 1.89,
-    imageUrl:
-      "https://nautichandler.com/238-large_default/3m-oil-absorbents-480x430x3mm-x-unity-1l.webp",
+    imageUrl: "/products/3m-oil-absorbents.png",
     description:
       "3M absorbers can be used in a wide variety of applications for spill control. Spills can be controlled and collected effectively minimizing environmental impact.",
     category: "Motor",
@@ -203,8 +190,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-VETUS-Exhaust-3.5",
     name: "VETUS Exhaust Pipe 3.5",
     price: 88.33,
-    imageUrl:
-      "https://nautichandler.com/1980-large_default/vetus-exhaust-pipe-35.webp",
+    imageUrl: "/products/vetus-exhaust-pipe-35.png",
     description: "Rubber tube, inner Ø 3.5 (20 m roll) (price per meter).",
     category: "Motor",
     sourceUrl: "https://www.nautichandler.com",
@@ -216,8 +202,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Plastimo offshore 105 compass black conical card",
     price: 257.7,
     originalPrice: 322.13,
-    imageUrl:
-      "https://nautichandler.com/16624-large_default/plastimo-offshore-105-compass-black-conical-card.webp",
+    imageUrl: "/products/plastimo-offshore.png",
     description: "Powerboats 5 to 10 m (17 to 33 ft).",
     category: "Navigation",
     sourceUrl:
@@ -228,8 +213,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Plastimo bracket kit offshore 105 compass black",
     price: 45.45,
     originalPrice: 56.81,
-    imageUrl:
-      "https://nautichandler.com/16625-large_default/plastimo-bracket-kit-offshore-105-compass-black.webp",
+    imageUrl: "/products/plastimo-bracket.png",
     description:
       "The optional bracket brings additional mounting possibilities, either on a horizontal surface avoiding to cut the instrument panel, or on a vertical bulkhead.",
     category: "Navigation",
@@ -244,8 +228,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Spinnaker repair tape black 50mmx4,5m",
     price: 15.14,
     originalPrice: 18.93,
-    imageUrl:
-      "https://nautichandler.com/8812-large_default/spinnaker-repair-tape-black-50mmx45m.webp",
+    imageUrl: "/products/spinnaker-repair.png",
     description: "Self-adhesive tape in nylon for sail repairs.",
     category: "Maintenance - Cleaning Products",
     sourceUrl:
@@ -256,8 +239,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "SIMPLE GREEN Regular Cleaner&Degreaser 10l",
     price: 129.81,
     originalPrice: 162.26,
-    imageUrl:
-      "https://nautichandler.com/1015-large_default/simple-green-regular-cleanerdegreaser-10l.webp",
+    imageUrl: "/products/simple-green-regular.png",
     description:
       "Powerful Multi-purpose Cleaner-Degreaser: safe, effective and powerful for critical cleaning that requires an ideal aroma and color free solution for the manufacturing, electronics and food industry.",
     category: "Cleaning Products",
@@ -271,8 +253,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Wire rope clamp s.steel ø3mm (2units)",
     price: 2.89,
     originalPrice: 3.61,
-    imageUrl:
-      "https://nautichandler.com/9321-large_default/wire-rope-clamp-ssteel-o3mm-2units.webp",
+    imageUrl: "/products/wire-rope-clamp.png",
     description: "AISI-316 stainless steel clamp cable tie.",
     category: "Fitting",
     sourceUrl:
@@ -283,8 +264,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Wire Rope Clip Cable Clamp S.Steel 4mm",
     price: 14.88,
     originalPrice: 18.6,
-    imageUrl:
-      "https://nautichandler.com/9322-large_default/wire-rope-clip-cable-clamp-ssteel-4mm.webp",
+    imageUrl: "/products/wire-rope-clip.png",
     description: "Cable ties for metal cables in stainless steel.",
     category: "Fitting",
     sourceUrl:
@@ -295,8 +275,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Isotherm-Water-230V",
     name: "Isotherm Water kit tank 230V 50-60Hz 15L",
     price: 349.72,
-    imageUrl:
-      "https://nautichandler.com/18129-large_default/isotherm-water-kit-tank-230v-5060hz-15l.webp",
+    imageUrl: "/products/isotherm-water.png",
     description: "Water tank 15L with pump",
     category: "Life On Board",
     sourceUrl:
@@ -306,8 +285,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Adapter-Olive-RG57049",
     name: "Adapter G1/4M-Olive 8mm-RG57049",
     price: 15.84,
-    imageUrl:
-      "https://nautichandler.com/20535-large_default/adapter-g14molive-8mmrg57049.webp",
+    imageUrl: "/products/adapter-g14molive.png",
     description:
       "Designed for the installation of a BBQ, a stove or an oven on a boat.",
     category: "Life On Board",
@@ -319,8 +297,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Inflatable-Repair-500ml",
     name: "Pvc Inflatable Repair Kit Black",
     price: 33.02,
-    imageUrl:
-      "https://nautichandler.com/11319-large_default/pvc-inflatable-repair-kit-black.webp",
+    imageUrl: "/products/pvc-inflatable.png",
     description:
       "Contains: 75 ml. single component glue PU and one piece of PVC fabric.",
     category: "Inflatable-Water Toys",
@@ -331,8 +308,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Inflatable-Tender-P220SH",
     name: "Plastimo Inflatable Tender Raid II P220SH Blue",
     price: 876.28,
-    imageUrl:
-      "https://nautichandler.com/16025-large_default/plastimo-inflatable-tender-raid-ii-p220sh-blue.webp",
+    imageUrl: "/products/plastimo-inflatable.png",
     description:
       "The innovative design makes the most of space on board with additional storage areas and optimum confort for the crew. The reinforced cones contribute to optimizing planing.",
     category: "Inflatable-Water Toys",
@@ -345,8 +321,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "3M Burlete Masking 13mmx50m x Box",
     price: 41.35,
     originalPrice: 51.69,
-    imageUrl:
-      "https://nautichandler.com/401-large_default/3m-burlete-masking-13mmx50m-x-box.webp",
+    imageUrl: "/products/3m-burlete.png",
     description:
       "Scoth masking weatherstrip 13 mm x 50 m Covers vehicle openings (doors, hood, trunk ...).",
     category: "Painting",
@@ -360,8 +335,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Armaflex xg tape self-adhesive 50mmx3mmx15m",
     price: 26.56,
     originalPrice: 31.25,
-    imageUrl:
-      "https://nautichandler.com/2276-large_default/armaflex-xg-tape-selfadhesive-50mmx3mmx15m.webp",
+    imageUrl: "/products/armaflex-xg-tape.png",
     description: "Reliable condensation control based on closed-cell",
     category: "Plumbing",
     sourceUrl:
@@ -372,8 +346,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-GARMIN-Echomap-62cv",
     name: "GARMIN Echomap Uhd 62cv With Transducer Gt24 xdcr",
     price: 749.0,
-    imageUrl:
-      "https://nautichandler.com/8887-large_default/garmin-echomap-uhd-62cv-with-transducer-gt24-xdcr.webp",
+    imageUrl: "/products/garmin-echomap.png",
     description:
       "The sunlight-readable 6 chartplotter features a quick-release bail mount, and the transducer bundle adds Ultra High-Definition scanning sonar and CHIRP traditional sonar.",
     category: "Electronics",
@@ -384,8 +357,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Inmarsat-isatphone-pro",
     name: "Inmarsat isatphone 2/pro dc charger",
     price: 15.0,
-    imageUrl:
-      "https://nautichandler.com/12497-large_default/inmarsat-isatphone-2pro-dc-charger.webp",
+    imageUrl: "/products/inmarsat-isatphone.png",
     description:
       "This AC power charger for the IsatPhone Pro and IsatPhone 2 comes with international plugs to plug in worldwide power.",
     category: "Electronics",
@@ -398,8 +370,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "Clamp stainless steel DIN 3017 8-16/9",
     price: 1.92,
     originalPrice: 2.57,
-    imageUrl:
-      "https://nautichandler.com/17959-large_default/clamp-stainless-steel-din-3017-8169.webp",
+    imageUrl: "/products/clamp-stainless-steel.png",
     description: "Clamp stainless steel DIN 3017 8-16/9",
     category: "Screws",
     sourceUrl:
@@ -411,8 +382,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "3M liquid protection one piece vest white size XL",
     price: 11.65,
     originalPrice: 14.57,
-    imageUrl:
-      "https://nautichandler.com/1909-large_default/3m-liquid-protection-one-piece-vest-white-size-xl.webp",
+    imageUrl: "/products/3m-liquid-protection.png",
     description:
       "Excellent barrier against dry particles and some splashes of liquid chemicals (EC type 5/6).",
     category: "Tools - Machines",
@@ -424,8 +394,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     id: "nh-Overshoe-small-navy",
     name: "Overshoe small 10-12 navy fendequip",
     price: 32.55,
-    imageUrl:
-      "https://nautichandler.com/17058-large_default/overshoe-small-1012-navy-fendequip.webp",
+    imageUrl: "/products/overshoe-small-1012-navy.png",
     description:
       "Ultra lightweight and easy to fit, each overShoe has non-absorbent sole and the non-slip underside will protect against scuff marks; perfect for your special visitors or contractors.",
     category: "Nautical Clothing and Personal Gear",
@@ -438,8 +407,7 @@ const MOCK_PRODUCTS: ProductItem[] = [
     name: "303 Aerospace Protectant UV Protectant for vinyl, rubber and plastic 0.473L",
     price: 41.09,
     originalPrice: 43.25,
-    imageUrl:
-      "https://nautichandler.com/27204-large_default/303-aerospace-protectant-uv-protection-for-vinyl-rubber-and-plastic-0473l.webp",
+    imageUrl: "/products/303-aerospace-protectant.png",
     description:
       "303 Aerospace Protectant is a high-performance treatment designed to protect marine surfaces from UV rays, salt exposure, and premature aging. Originally developed for the aerospace industry, this advanced formula provides superior protection for vinyl, plastic, rubber, fiberglass, and gel coat, keeping them looking like new for longer.",
     category: "Brands",
